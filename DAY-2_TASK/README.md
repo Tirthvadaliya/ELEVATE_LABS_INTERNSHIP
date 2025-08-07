@@ -1,11 +1,3 @@
-# Calculator
-
-This is a simple command-line calculator implemented in Python. It supports the following operations:
-- Addition
-- Subtraction
-- Multiplication
-- Division
-
 ## Usage# To-Do List Application
 
 This is a simple console-based To-Do List application written in Python. It allows you to manage your daily tasks directly from the terminal.
