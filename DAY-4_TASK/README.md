@@ -1,33 +1,46 @@
-#  News Headlines Data Collection
+# User Management REST API
 
-This Python script (`datacollection.py`) collects the latest news headlines from the [BBC News](https://www.bbc.com/news) website and saves them to a text file.
+This Python script (`demo.py`) implements a simple RESTful API for managing users using Flask. It supports basic CRUD operations (Create, Read, Update, Delete) for user data.
 
 ## Features
 
-- Fetches the BBC News homepage
-- Extracts all headlines inside `<h2>` tags
-- Saves the headlines to `headlines.txt` in the same folder
+- List all users
+- Retrieve a user by ID
+- Create a new user (with name and email)
+- Update an existing user's details
+- Delete a user
 
 ## Requirements
 
 - Python 3.x
-- [requests](https://pypi.org/project/requests/)
-- [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
+- [Flask](https://pypi.org/project/Flask/)
+- [Flask-RESTful](https://pypi.org/project/Flask-RESTful/)
 
 Install dependencies with:
 ```sh
-pip install requests beautifulsoup4
+pip install flask flask-restful
 ```
 
 ## Usage
 
 1. Run the script:
    ```sh
-   python datacollection.py
+   python demo.py
    ```
-2. After running, check the `headlines.txt` file in the same directory for the list of headlines.
+2. The API will be available at `http://127.0.0.1:5000/`.
+
+### Example Endpoints
+
+- `GET /users` — List all users
+- `GET /users/<user_id>` — Get user by ID
+- `POST /users` — Create a new user (JSON: `{ "name": "...", "email": "..." }`)
+- `PUT /users/<user_id>` — Update user (JSON: `{ "name": "...", "email": "..." }`)
+- `DELETE /users/<user_id>` — Delete user
 
 ## File Structure
 
-- `datacollection.py` : Script to fetch and save BBC News headlines
-- `headlines.txt` : Output file containing
+- `demo.py` : Main Flask REST API script
+- `output/` : Folder containing screenshots for CRUD operations
+- `README.md` : This documentation
+
+> **Note:** Screenshots demonstrating CRUD operations are saved in the `output` folder.
