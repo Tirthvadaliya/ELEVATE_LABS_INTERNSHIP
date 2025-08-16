@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero card">
+  <h1 class="title">Hi, I’m {{ profile.name.split()[0] }} 👋</h1>
+  <p class="subtitle">{{ profile.about }}</p>
+  <a class="btn" href="{{ url_for('contact') }}">Get in touch</a>
+</section>
+
+<section class="card">
+  <h2>Skills</h2>
+  <ul class="chips">
+    {% for skill in profile.skills %}
+      <li class="chip">{{ skill }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- Projects intentionally skipped per request -->
+{% endblock %}

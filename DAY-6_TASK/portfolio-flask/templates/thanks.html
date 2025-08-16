@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>Thank you, {{ name }}! 🎉</h2>
+  <p>Your message has been received. I’ll get back to you soon.</p>
+  <a class="btn" href="{{ url_for('home') }}">Back to Home</a>
+</section>
+{% endblock %}
