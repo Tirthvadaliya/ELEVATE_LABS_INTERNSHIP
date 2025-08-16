@@ -1,0 +1,7 @@
+🤖 Chatbot: Hi! I'm your simple chatbot. Type 'bye' to exit.
+You: hello
+🤖 Chatbot: Hello there! How can I help you?
+You: how are you
+🤖 Chatbot: I'm just a bot, but I'm doing great! Thanks for asking.
+You: bye
+🤖 Chatbot: Goodbye! Have a nice day 😊
